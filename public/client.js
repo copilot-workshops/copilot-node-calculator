@@ -32,33 +32,6 @@ function calculate(operand1, operation, operand2 = null) {
         case '/':
             uri += "?operation=divide";
             break;
-        case '^':
-            uri += "?operation=power";
-            break;
-        case '%':
-            uri += "?operation=modulus";
-            break;
-        case 'sqrt':
-            uri += "?operation=sqrt";
-            break;
-        case '!':
-            uri += "?operation=factorial";
-            break;
-        case 'log':
-            uri += "?operation=log";
-            break;
-        case 'sin':
-            uri += "?operation=sin";
-            break;
-        case 'cos':
-            uri += "?operation=cos";
-            break;
-        case 'tan':
-            uri += "?operation=tan";
-            break;
-        case 'neg':
-            uri += "?operation=negate";
-            break;
         default:
             setError();
             return;

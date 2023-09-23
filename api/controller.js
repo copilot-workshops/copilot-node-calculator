@@ -28,15 +28,6 @@ exports.calculate = function(req, res) {
     'subtract': function(a, b) { return a - b },
     'multiply': function(a, b) { return a * b },
     'divide':   function(a, b) { return a / b },
-    'power':    function(a, b) { return Math.pow(a, b) },
-    'modulus':  function(a, b) { return a % b },
-    'sqrt':     function(a) { return Math.sqrt(a) },
-    'factorial':function(a) { return factorial(a) },
-    'log':      function(a) { return Math.log(a) },
-    'sin':      function(a) { return Math.sin(a) },
-    'cos':      function(a) { return Math.cos(a) },
-    'tan':      function(a) { return Math.tan(a) },
-    'negate':   function(a) { return -a }
   };
 
   if (!req.query.operation) {
