@@ -11,18 +11,6 @@ exports.calculate = function(req, res) {
   });
 
   // TODO: Add operator
-  /**
-   * An object containing mathematical operations as functions.
-   * @typedef {Object} Operations
-   * @property {function} add - Adds two numbers.
-   * @property {function} subtract - Subtracts two numbers.
-   * @property {function} multiply - Multiplies two numbers.
-   * @property {function} divide - Divides two numbers.
-   * @property {function} power - Raises a number to a power.
-   * @property {function} mod - Returns the remainder of a division operation.
-   * @property {function} negate - Negates a number.
-   */
-
   var operations = {
     'add':      function(a, b) { return Number(a) + Number(b) },
     'subtract': function(a, b) { return a - b },
