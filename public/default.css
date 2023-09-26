@@ -6,7 +6,7 @@ BODY {
     background-color: #1b4076;
 }
 
-@media screen and (min-device-width: 500px) and (min-device-height: 1024px) {
+@media screen and (min-device-width: 500px) and (min-device-height: 500px) {
     BODY {
         transform: scale(1.75);
         transform-origin: 50% 0;
@@ -24,22 +24,26 @@ BODY {
 
 .container {
     min-width: 250px;
-    min-height: 531px;
+    min-height: 450px;
     width: 250px;
     padding: 25px;
     margin: 0 auto;
     position: relative;
-    background-image: url(background.png);
-    background-size: 300px 531px;
-    background-repeat: no-repeat;
-    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(background.png); */
+    /* background-size: 300px 500px; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center top; */
 }
 
 #results {
+    height: auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: 0;
-    left: 0;
 }
+
 
 #buttons {
     position: relative;
@@ -47,17 +51,24 @@ BODY {
 
 #result {
     background-color: #9b9b9b;
-    width: 226px;
-    height: 63px;
-    margin: 0;
-    padding: 0 12px;
-    position: absolute;
-    border: 0;
-    left: 0;
-    top: 32px;
+    height: auto;
+    padding: 10px;
+    position: relative;
     font-family: system-ui;
     font-size: 25px;
     text-align: right;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 250px;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    /* top: auto; */
+    bottom: 0;
+    display: block;
+    margin: auto;
 }
 
 /*BUTTON {
@@ -156,12 +167,16 @@ BODY {
     width: 25px;
 }
 
-.box {
-    box-sizing: border-box;
-    top: 220px;
-    width: 250px;
-    position: absolute;
+
+#operator {
+    padding-top: 10;
+    margin-bottom: 10;
+    display: block;
 }
+
+#operator span {
+    color: white;
+  }
 
 .span-2 {
     grid-column: span 2;

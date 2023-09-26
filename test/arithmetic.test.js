@@ -92,10 +92,7 @@ describe('Arithmetic', function () {
                 });
         });
     });
-
-// TODO: Challenge #1
- 
-
+    
     describe('Multiplication', function () {
         it('multiplies two positive integers', function (done) {
             request.get('/arithmetic?operation=multiply&operand1=21&operand2=2')
@@ -205,4 +202,7 @@ describe('Arithmetic', function () {
                 });
         });
     });
+    
+    // TODO: Challenge #1
+
 });
