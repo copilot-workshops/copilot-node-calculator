@@ -11,6 +11,7 @@
 		"vscode": {
 			"extensions": [
 				"GitHub.copilot",
+				"GitHub.copilot-chat",
 				"GitHub.copilot-labs"
 			]
 		}
