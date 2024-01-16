@@ -3,7 +3,7 @@ module.exports = {
         "browser": true,
         "es2021": true,
         "mocha": true,
-        "request": true
+        "node": true
     },
     "extends": "eslint:recommended",
     "overrides": [
@@ -13,5 +13,9 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+    },
+    "globals": {
+        "expect": true,
+        "request": true
     }
 }
