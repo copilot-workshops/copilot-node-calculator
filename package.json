@@ -1,18 +1,7 @@
 {
-  "name": "node-calculator",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "Calculator",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/demo/node-calculator.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon server.js",
-    "build": "exit 0",
-    "lint": "eslint ./api/**/*.js ./server.js",
-    "test": "nyc --reporter=cobertura --reporter=html --reporter=text mocha --timeout 10000 --reporter mocha-multi-reporters --reporter-options configFile=test/config.json && ./node_modules/.bin/gulp inlinesource"
-  },
   "keywords": [
     "azure",
     "pipelines",
@@ -21,8 +10,27 @@
     "ci",
     "cd"
   ],
-  "author": "Demo User",
+  "homepage": "https://github.com/demo/node-calculator#readme",
+  "bugs": {
+    "url": "https://github.com/demo/node-calculator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demo/node-calculator.git"
+  },
   "license": "MIT",
+  "author": "Demo User",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "exit 0",
+    "lint": "eslint ./api/**/*.js ./server.js",
+    "test": "nyc --reporter=cobertura --reporter=html --reporter=text mocha --timeout 10000 --reporter mocha-multi-reporters --reporter-options configFile=test/config.json && ./node_modules/.bin/gulp inlinesource"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^2.0.20"
@@ -37,12 +45,5 @@
     "mocha-multi-reporters": "^1.1.7",
     "nyc": "^13.3.0",
     "supertest": "^3.4.2"
-  },
-  "bugs": {
-    "url": "https://github.com/demo/node-calculator/issues"
-  },
-  "homepage": "https://github.com/demo/node-calculator#readme",
-  "directories": {
-    "test": "test"
   }
 }
