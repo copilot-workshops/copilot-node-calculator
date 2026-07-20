@@ -167,6 +167,10 @@ BODY {
     grid-column: span 2;
 }
 
+.span-4 {
+    grid-column: span 4;
+}
+
 .calculator-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
